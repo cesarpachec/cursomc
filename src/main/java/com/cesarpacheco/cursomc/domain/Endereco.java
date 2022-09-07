@@ -39,7 +39,7 @@ public class Endereco implements Serializable{
 	}
 
 	public Endereco(Integer id, String logradouro, String numero, String complemento, String bairro, String cep,
-			Cliente cliente, Cidade cidade) {
+			Cliente cliente, Cidade cid) {
 		super();
 		this.id = id;
 		this.logradouro = logradouro;
@@ -48,7 +48,7 @@ public class Endereco implements Serializable{
 		this.bairro = bairro;
 		this.cep = cep;
 		this.cliente = cliente;
-		this.setCidade(cidade);
+		this.setCidade(cid);
 	}
 
 	public Integer getId() {
@@ -111,8 +111,8 @@ public class Endereco implements Serializable{
 		return cidade;
 	}
 
-	public void setCidade(Cidade cidade) {
-		this.cidade = cidade;
+	public void setCidade(Cidade cid) {
+		this.cidade = cid;
 	}
 
 	@Override
