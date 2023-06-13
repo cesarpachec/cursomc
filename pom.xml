@@ -19,6 +19,7 @@
 
 	<properties>
 		<java.version>8</java.version>
+		<start-class>br.com.cesarpacheco.cursomc.CursomcApplication</start-class>
 	</properties>
 	<dependencies>
 		<dependency>
